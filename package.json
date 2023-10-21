@@ -1,0 +1,54 @@
+{
+  "name": "my-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "scripts": {
+    "start": "cross-env SERVE=true webpack serve --config webpack.config.js --env mode=development",
+    "build": "webpack",
+    "build:prod": "webpack --env mode=production",
+    "clean": "rimraf dist",
+    "test": "react-scripts test"
+  },
+  "dependencies": {
+    "classnames": "2.3.2",
+    "mobx": "6.10.2",
+    "mobx-react": "7.6.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-query": "4.0.0",
+    "react-router-dom": "6.2.1",
+    "single-spa": "5.9.0",
+    "single-spa-react": "4.3.0",
+    "svgo-loader": "^4.0.0",
+    "yup": "0.32.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-react": "^7.22.15",
+    "@pmmmwh/react-refresh-webpack-plugin": "github:pmmmwh/react-refresh-webpack-plugin",
+    "babel-loader": "^9.1.3",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.8.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "postcss": "^8.4.31",
+    "postcss-loader": "^7.3.3",
+    "postcss-preset-env": "^9.2.0",
+    "react-refresh": "^0.14.0",
+    "sass": "^1.69.4",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack": "5.88.2",
+    "webpack-cli": "5.1.4",
+    "webpack-config-single-spa-react": "4.0.4",
+    "webpack-config-single-spa-react-ts": "4.0.4",
+    "webpack-config-single-spa-ts": "4.1.3",
+    "webpack-dev-server": "4.15.1",
+    "webpack-merge": "5.9.0"
+  }
+}
